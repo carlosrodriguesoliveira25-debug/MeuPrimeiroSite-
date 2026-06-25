@@ -11,7 +11,7 @@
     <h1>Meu Blog</h1>
     <p>Carlos Eduardo</p>
     <p>Vou compartilhar com você neymar10</p>
- </header>   
+ </header>  
 <main>
     <h2>Meu primeiro post</h2>
     <p>Bem vindo ao meu Neyday</p>
@@ -20,4 +20,14 @@
     <button>😍<span>0</span></button>
 </main>
 </body>
+<script>
+    const botoes = document.querySelectorALL("button");
+    botoes.ForEach(function(botao){
+        botao.addEventListener("click, botaoclicado");
+        function botaoclicado(){
+            let texto = botao.querySelector("span")
+            texto.textContent++;
+        }
+    })
+</script>
 </html>
